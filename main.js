@@ -347,7 +347,7 @@ function countItemsLeft(){
 }
 
 
-//------------------toggle theme when clicked------------------
+//------------------toggle theme when clicked-------------------
 function toggleTheme(){
     
     //if theme is light than change it to dark
