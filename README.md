@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Open Live Site](https://rilindtasholli.github.io/todo-app)
-- Solution URL: [Open Solution](link here)
+- Solution URL: [Open Solution](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub/todo-app-draganddrop-sortable-save-after-refresh-theme-toggle-k6NgDrqBZ)
 
 
 ## My process
@@ -62,7 +62,7 @@ Users should be able to:
 
 - Made it functional with Local Storage so that it will save the state of Item List and Theme Toggle even when page is refreshed.
 - I used JQuery IU to make the list sortable with drag and drop.
-
+- CSS Anmations
 
 ## Author
 
