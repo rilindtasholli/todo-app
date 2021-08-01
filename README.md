@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Open Live Site](link here)
+- Live Site URL: [Open Live Site](https://rilindtasholli.github.io/todo-app)
 - Solution URL: [Open Solution](link here)
 
 
