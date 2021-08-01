@@ -383,13 +383,13 @@ function updateTheme(){
         })
 
         //theme-icon change to moon icon
-        themeIcon.src = "/images/icon-moon.svg";
+        themeIcon.src = "images/icon-moon.svg";
     }else{
         elements.forEach(item => {
             item.classList.remove("light-theme");
         })
 
-        themeIcon.src = "/images/icon-sun.svg";
+        themeIcon.src = "images/icon-sun.svg";
     }
 }
 
