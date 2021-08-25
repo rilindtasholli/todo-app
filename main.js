@@ -28,6 +28,10 @@ document.querySelector(".theme-icon").addEventListener("click", function() {
 });
 //------------------------------------------------------------------------------------
 
+//initialize "listItems" on localStorage
+localStorage.setItem("listItems", []);
+
+
 //set to "All" if filterActive is unset
 if(localStorage.getItem('filterActive') == null){
     localStorage.setItem('filterActive', 'All')
@@ -81,7 +85,12 @@ function enterInput(event){
         var newItem = {"text": text, "completed": false};
 
         //get list with items from localStorage
-        var array = JSON.parse(localStorage.getItem("listItems"));
+        if(localStorage.getItem("listItems").length != 0){
+            //if listItems is not empty
+            var array = JSON.parse(localStorage.getItem("listItems"));
+        }else{
+            var array = [];
+        }
 
         //add new item to the list
         array.push(newItem);
@@ -266,7 +275,15 @@ function deleteElement(e){
 
 //------------------Get items from localStorage and add them to the list div------------------
 function updateList(){
-    var array = JSON.parse(localStorage.getItem("listItems"));
+
+   //get list with items from localStorage
+   if(localStorage.getItem("listItems").length != 0){
+        //if listItems is not empty
+        var array = JSON.parse(localStorage.getItem("listItems"));
+    }else{
+        var array = [];
+    }
+    
 
     document.querySelector(".list").innerHTML = "";
     
